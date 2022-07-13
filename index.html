@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome fake KaKao Talk</title>
+</head>
+
+<body>
+    <div id="status-box">
+        <!-- status bar 의 자식인 column 클래스라는 BEM규칙 -->
+        <div class="status-bar__column">
+            <span>No service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <span>200%</span>
+            <i class="fa-solid fa-battery-quarter"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <!-- To Do: add battery icon & lightning icon -->
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to kakaoTalk</h1>
+        <p class="welcome-header__text">ㅋㅋㅇ계정 만들려면 니 이메일이랑 폰번호로 로그인해라</p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="password" />
+        <input type="submit" value="Log In" />
+        <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+    <!-- script tag는 항상 마지막에 있어야함. body태그를 닫기 직전! -->
+    <script src="https://kit.fontawesome.com/493cc16663.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
