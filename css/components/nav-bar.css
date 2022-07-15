@@ -1,0 +1,43 @@
+.nav{
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link{
+    position: relative;
+    color: #2e363e;
+}
+.nav__notification{
+    background-color: tomato;
+    /* span은 inline이므로 width, height값을 가지지 않아 block으로 만들자 */
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* 숫자1을 가운데로 오게 만들자.  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    right: -5px;
+    bottom: 15px;
+}
+.nav__new{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: tomato;
+    position: absolute;
+    right: -5px;
+}
