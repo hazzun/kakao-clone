@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting</title>
+</head>
+
+<body>
+    <div id="status-bar">
+        <!-- status bar 의 자식인 column 클래스라는 BEM규칙 -->
+        <div class="status-bar__column">
+            <span>No service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <span>20%</span>
+            <i class="fa-solid fa-battery-quarter"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <!-- To Do: add battery icon & lightning icon -->
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Chats</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fa-solid fa-comment-dots fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+    <main>
+        <div class="user-component user-component__no-border">
+            <div class="user-component__column">
+                <img src="https://play-lh.googleusercontent.com/Ob9Ys8yKMeyKzZvl3cB9JNSTui1lJwjSKD60IVYnlvU2DsahysGENJE-txiRIW9_72Vd"
+                    class="user-component__avatar" />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">KakaoTalk</h4>
+                    <h6 class="user-component__subtitle">Please read this message!</h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <div class="user-component__info">
+                    <h4 class="user-component__info-time">11:11</h4>
+                    <div class="user-component__info-notice">1</div>
+                </div>
+            </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fas fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <span class="nav__notification">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="search.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="setting.html">
+                    <span class="nav__new"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- script tag는 항상 마지막에 있어야함. body태그를 닫기 직전! -->
+    <script src="https://kit.fontawesome.com/493cc16663.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -4,6 +4,10 @@
     align-items: center;
     padding: 25px;
     padding-top: 50px;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
 }
 .screen-header__title{
     font-size: 28px;

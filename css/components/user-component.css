@@ -1,7 +1,16 @@
-.user-component,
+.user-component{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
 .user-component__column:first-child{
     display: flex;
     align-items: center;
+}
+.user-component__no-border{
+    border-bottom: 0;
 }
 .user-component__avatar{
     width: 70px;
@@ -22,6 +31,8 @@
     width: 80px;
     height: 80px;
 }
-.friends-screen{
-    padding: 0px var(--space);
+.user-component__avatar--sm{
+    width: 60px;
+    height: 60px;
+    border-radius: 23px;
 }

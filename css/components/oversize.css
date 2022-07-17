@@ -1,0 +1,22 @@
+#oversize {
+    position: absolute;
+    z-index:99;
+    height: 120%;
+    width:100vw;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+    top:0;
+    visibility: hidden;
+}
+
+@media screen and (min-width:800px){
+    #oversize {
+        visibility:visible;
+    }
+    body {
+        height:80vh;
+    }
+}

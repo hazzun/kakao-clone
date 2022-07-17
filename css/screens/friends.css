@@ -5,7 +5,19 @@
     padding: 15px 0;
     font-size: 18px;
     margin-bottom: 10px;
+    
 }
 #friends-display-link i{
     color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen{
+    padding: 0px var(--space);
+    padding-top: 103px;
+}
+.friends-screen__channel-header{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
