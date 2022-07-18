@@ -1,6 +1,23 @@
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeout{
+    100%{
+        transform: translateY(100px);
+        /* opacity: 0; */
+    }
+}
+
 #unique-padding{
     padding-top: 115px;
-    /* padding-bottom: 100px; */
+    animation: fadein 1s ease-in-out;
 }
 #talk-room{
     background-color:#c6b5cf;
@@ -21,6 +38,11 @@
     padding: 10px 0;
     display: flex;
 }
+.chat-who img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
 .chat-who__text{
     padding-left: 5px;
     display: flex;
@@ -29,14 +51,16 @@
 }
 .chat-who__text-name{
     color: gray;
+    margin-bottom: 10px;
 }
 .chat-who__text-info{
     display: flex;
     align-items: flex-end;
 }
 .chat-who__text-content{
-    padding: 8px;
+    padding: 10px;
     border-radius: 8px;
+    font-size: 15px;
     background-color: white;
     border-top-left-radius: 0;
 }
@@ -54,8 +78,9 @@
     padding-right: 5px;
 }
 .chat-me__content{
-    padding: 8px;
+    padding: 10px;
     border-radius: 8px;
+    font-size: 15px;
     background-color: var(--yellow);
     border-top-right-radius: 0;
 }
@@ -75,8 +100,7 @@ form{
     position: relative;
 }
 .send-message__input{
-    width: 90%;
-    /* height: 100%; */
+    width: 95%;
     padding: 10px;
     border: 0.5px solid rgb(173, 171, 171);
     border-radius: 40px;
@@ -84,7 +108,7 @@ form{
 }
 .send-message__imoticon{
     position: absolute;
-    right: 70px;
+    right: 50px;
     top: 18px;
     opacity: 0.5;
 }
@@ -100,17 +124,32 @@ form{
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 30px;
+    right: 10px;
     top: 4px;
 
 }
 @keyframes inputfocus{
-    100%{
-        width: 100%;
-        transform: scale(1.2);
+    from{
+        opacity: 0.5;
+    }
+    to{
+        background-color: none;
+        width: 95%;
+        opacity: 1;
+        transform: translateX(-25px) translateY(-105px) scale(1.1);
     }
 }
-.send-message__input:focus{
+/* form:focus-within i,
+form:focus-within div:first-child,
+form:focus-within .send-message__send{
+    animation: fadeout 1s ease-in-out;
+    animation-fill-mode: forwards;
+} */
+form:focus-within{
+    animation: fadeout 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+form:focus-within .send-message__input{
     animation: inputfocus 0.5s ease-in-out;
     animation-fill-mode: forwards;
 }
