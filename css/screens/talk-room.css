@@ -84,7 +84,7 @@
     background-color: var(--yellow);
     border-top-right-radius: 0;
 }
-form{
+.send-form{
     width: 100%;
     bottom: 0;
     display: flex;

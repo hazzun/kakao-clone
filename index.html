@@ -26,20 +26,22 @@
         </div>
     </div>
 
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to kakaoTalk</h1>
-        <p class="welcome-header__text">카카오계정 만들려면 이메일이랑 핸드폰번호를 입력하세요</p>
-    </header>
+    <main>
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to kakaoTalk</h1>
+            <p class="welcome-header__text">카카오계정 만들려면 이메일이랑 핸드폰번호를 입력하세요</p>
+        </header>
 
-    <form action="friends.html" method="GET" id="login-form">
-        <!-- form은 action과 method의 두가지 중요한 속성이있다. -->
-        <!-- method는 POST와 GET의 두가지 방식 중 하나를 쓸 수 있다. -->
-        <!-- POST는 백엔드서버에 정보를 전송하는 방식, GET은 정보에 취약함(username, pw를 get으로 내보내면 안됨). -->
-        <input type="text" required placeholder="Email or phone number" />
-        <input type="password" required placeholder="password" />
-        <input type="submit" value="Log In" />
-        <a href="#">Find Kakao Account or Password</a>
-    </form>
+        <form action="friends.html" method="GET" id="login-form">
+            <!-- form은 action과 method의 두가지 중요한 속성이있다. -->
+            <!-- method는 POST와 GET의 두가지 방식 중 하나를 쓸 수 있다. -->
+            <!-- POST는 백엔드서버에 정보를 전송하는 방식, GET은 정보에 취약함(username, pw를 get으로 내보내면 안됨). -->
+            <input type="text" required placeholder="Email or phone number" />
+            <input type="password" required placeholder="password" />
+            <input type="submit" value="Log In" />
+            <a href="#">Find Kakao Account or Password</a>
+        </form>
+    </main>
     <div id="oversize">화면좀 줄여주세요</div>
     <!-- script tag는 항상 마지막에 있어야함. body태그를 닫기 직전! -->
     <script src="https://kit.fontawesome.com/493cc16663.js" crossorigin="anonymous"></script>
