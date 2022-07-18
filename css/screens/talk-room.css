@@ -1,0 +1,116 @@
+#unique-padding{
+    padding-top: 115px;
+    /* padding-bottom: 100px; */
+}
+#talk-room{
+    background-color:#c6b5cf;
+}
+.chat-timelog{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.chat-timelog span{
+    justify-content: center;
+    background-color: rgb(116, 110, 110);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0.55;
+}
+.chat-who{
+    padding: 10px 0;
+    display: flex;
+}
+.chat-who__text{
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chat-who__text-name{
+    color: gray;
+}
+.chat-who__text-info{
+    display: flex;
+    align-items: flex-end;
+}
+.chat-who__text-content{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+    border-top-left-radius: 0;
+}
+.chat-who__text-time{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.chat-me{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.chat-me__time{
+    font-size: 12px;
+    padding-right: 5px;
+}
+.chat-me__content{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--yellow);
+    border-top-right-radius: 0;
+}
+form{
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 2px 10px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.send-message{
+    width: 90%;
+    position: relative;
+}
+.send-message__input{
+    width: 90%;
+    /* height: 100%; */
+    padding: 10px;
+    border: 0.5px solid rgb(173, 171, 171);
+    border-radius: 40px;
+    background-color: rgb(245, 245, 245);
+}
+.send-message__imoticon{
+    position: absolute;
+    right: 70px;
+    top: 18px;
+    opacity: 0.5;
+}
+.fa-square-plus{
+    opacity: 0.5;
+}
+.send-message__send{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    top: 4px;
+
+}
+@keyframes inputfocus{
+    100%{
+        width: 100%;
+        transform: scale(1.2);
+    }
+}
+.send-message__input:focus{
+    animation: inputfocus 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}

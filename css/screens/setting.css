@@ -1,0 +1,17 @@
+.setting {
+    padding: 20px 0;
+    border-bottom: 1px solid lightgrey;
+}
+ul span{
+    margin-left: 10px;
+}
+.setting-list{
+    margin: 20px 0;
+    height: 30px;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.setting-version{
+    color: lightgrey;
+}

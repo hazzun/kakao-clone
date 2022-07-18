@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setting</title>
+</head>
+
+<body>
+    <div id="status-bar">
+        <!-- status bar 의 자식인 column 클래스라는 BEM규칙 -->
+        <div class="status-bar__column">
+            <span>No service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <span>20%</span>
+            <i class="fa-solid fa-battery-quarter"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <!-- To Do: add battery icon & lightning icon -->
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <i class="fas fa-chevron-left fa-lg"></i>
+        <h1 class="screen-header__title">Friends</h1>
+        <span><a href="search.html"><i class="fas fa-search fa-lg"></i></a></span>
+    </header>
+
+    <main>
+        <ul class="setting">
+            <li class="setting-list">
+                <div>
+                    <i class="fa-solid fa-bullhorn fa-lg"></i>
+                    <span>공지사항</span>
+                </div>
+            </li>
+            <li class="setting-list">
+                <div>
+                    <i class="fa-solid fa-vial fa-lg"></i>
+                    <span>카카오 연구소</span>
+                </div>
+            </li>
+            <li class="setting-list no-border">
+                <div>
+                    <i class="fa-solid fa-circle-info fa-lg"></i>
+                    <span>버전</span>
+                </div>
+                <div class="setting-version">최신 버전입니다</div>
+            </li>
+        </ul>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fas fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <span class="nav__notification">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="search.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__new"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- script tag는 항상 마지막에 있어야함. body태그를 닫기 직전! -->
+    <script src="https://kit.fontawesome.com/493cc16663.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -35,9 +35,10 @@
 .open-chat__info-text__title{
     font-weight: 500;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 }
 .open-chat__info-text__subtitle{
+    font-size: 15px;
     color: gray;
 }
 .open-chat__info-text__manage{
@@ -51,13 +52,14 @@
     margin-right: 10px;
 }
 .open-chat__title-img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 20px;
     z-index: 1;
 }
 .open-chat__info-img{
     position: relative;
+    font-size: 12px;
 }
 .open-chat__info-img span{
     position: absolute;
@@ -66,7 +68,7 @@
     color: white;
     background-color: black;
     border-radius: 15px;
-    opacity: 0.6;
+    opacity: 0.7;
     right: 9px;
     bottom: 9px;
 }
