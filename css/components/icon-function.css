@@ -1,0 +1,19 @@
+.icon-function{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+.icon-function__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.icon-function__column i{
+    margin: 20px 0;
+}
+.icon-hidden{
+    visibility: hidden;
+}

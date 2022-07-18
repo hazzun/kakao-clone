@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting</title>
+</head>
+
+<body>
+    <div id="status-bar">
+        <!-- status bar 의 자식인 column 클래스라는 BEM규칙 -->
+        <div class="status-bar__column">
+            <span>No service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <span>20%</span>
+            <i class="fa-solid fa-battery-quarter"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <!-- To Do: add battery icon & lightning icon -->
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">찾기</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><a href="setting.html"><i class="fas fa-cog fa-lg"></i></a></span>
+            <span class="nav__new header__new"></span>
+        </div>
+    </header>
+    <main>
+        <div class="icon-function">
+            <div class="icon-function__column">
+                <i class="fa-solid fa-qrcode fa-2x"></i>
+                <span class="icon-function__text">QR Dode</span>
+            </div>
+            <div class="icon-function__column">
+                <i class="fa-solid fa-address-book fa-2x"></i>
+                <span class="icon-function__text">Add by<br>Contacts</span>
+            </div>
+            <div class="icon-function__column">
+                <i class="fa-solid fa-at fa-2x"></i>
+                <span class="icon-function__text">Add by ID</span>
+            </div>
+            <div class="icon-function__column">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <span class="icon-function__text">Invite</span>
+            </div>
+        </div>
+        <div class="recommend-friends">
+            <span>추천 친구</span>
+            <div class="recommend-friends__list">
+                <span>추천 친구가 없습니다.</span>
+            </div>
+        </div>
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <span>오픈 채팅</span>
+                <span>오픈 채팅 홈 가기 <i class="fas fa-chevron-right fa-xs"></i></span>
+            </div>
+            <ul>
+                <li class="open-chat__li">
+                    <div class="open-chat__info">
+                        <div class="open-chat__info-text">
+                            <span class="open-chat__info-text__title">#고독한박명수</span>
+                            <span class="open-chat__info-text__subtitle">#명수옹 #무한도전 #박명수어록</span>
+                            <div class="open-chat__info-text__manage">
+                                <img class="open-chat__manage-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbdW_v4Xs9akbGS-RAoBuYfCX_nLRjKiQew&usqp=CAU" />
+                                <span>멤버 1,032명 | 활동중</span>
+                            </div>
+                        </div>
+                        <div class="open-chat__info-img">
+                            <img class="open-chat__title-img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGouVp8xAycMBumRgbh-wwrx1gnAWEn4nHOA&usqp=CAU" />
+                            <span><i class="fa-solid fa-heart"></i> 5,713</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="open-chat__li">
+                    <div class="open-chat__info">
+                        <div class="open-chat__info-text">
+                            <span class="open-chat__info-text__title">#앱등이</span>
+                            <span class="open-chat__info-text__subtitle">#앱등이모임 #아이폰유저들 #맥북사용자들</span>
+                            <div class="open-chat__info-text__manage">
+                                <img class="open-chat__manage-img"
+                                    src="https://yt3.ggpht.com/ytc/AKedOLQbGU7E36ebO2GboqjekjMHShyKDB4cXao0TbDi0A=s900-c-k-c0x00ffffff-no-rj" />
+                                <span>멤버 4,827명 | 활동중</span>
+                            </div>
+                        </div>
+                        <div class="open-chat__info-img">
+                            <img class="open-chat__title-img"
+                                src="https://yt3.ggpht.com/ytc/AKedOLQbGU7E36ebO2GboqjekjMHShyKDB4cXao0TbDi0A=s900-c-k-c0x00ffffff-no-rj" />
+                            <span><i class="fa-solid fa-heart"></i> 713</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="open-chat__li">
+                    <div class="open-chat__info">
+                        <div class="open-chat__info-text">
+                            <span class="open-chat__info-text__title">#곰돌이푸</span>
+                            <span class="open-chat__info-text__subtitle">#곰돌이푸 #곰돌이푸인생 #꿀찾아요</span>
+                            <div class="open-chat__info-text__manage">
+                                <img class="open-chat__manage-img"
+                                    src="https://w7.pngwing.com/pngs/730/708/png-transparent-winnie-the-pooh-eeyore-piglet-winnie-the-pooh-s-rumbly-tumbly-adventure-winnipeg-winnie-the-pooh.png" />
+                                <span>멤버 21명 | 활동중</span>
+                            </div>
+                        </div>
+                        <div class="open-chat__info-img">
+                            <img class="open-chat__title-img"
+                                src="https://stickershop.line-scdn.net/stickershop/v1/product/4187/LINEStorePC/main.png;compress=true" />
+                            <span><i class="fa-solid fa-heart"></i> 17</span>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fas fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <span class="nav__notification">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="search.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__new"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- script tag는 항상 마지막에 있어야함. body태그를 닫기 직전! -->
+    <script src="https://kit.fontawesome.com/493cc16663.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
